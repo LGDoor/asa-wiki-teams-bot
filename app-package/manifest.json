@@ -1,0 +1,55 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.14",
+    "version": "1.0.0",
+    "id": "2b544104-c34a-4f0d-816d-28808c1d7f9f",
+    "packageName": "com.microsoft.azure.spring",
+    "developer": {
+      "name": "Azure Spring Apps Team",
+      "websiteUrl": "https://www.microsoft.com",
+      "privacyUrl": "https://www.teams.com/privacy",
+      "termsOfUseUrl": "https://www.teams.com/termsofuser"
+    },
+    "icons": {
+      "outline": "icon-outline.png",
+      "color": "icon-color.png"
+    },
+    "name": {
+      "short": "ASA Wiki GPT",
+      "full": "Wiki GPT for Azure Spring Apps"
+    },
+    "description": {
+      "short": "Wiki GPT for Azure Spring Apps",
+      "full": "Wiki GPT for Azure Spring Apps"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+      {
+        "botId": "5c5c0e1d-03d4-4c93-864f-af1be4092f07",
+        "scopes": [
+          "personal",
+          "groupchat",
+          "team"
+        ],
+        "isNotificationOnly": false,
+        "supportsCalling": false,
+        "supportsVideo": false,
+        "supportsFiles": false,
+        "commandLists": [
+          {
+            "scopes": [
+              "personal",
+              "groupchat",
+              "team"
+            ],
+            "commands": []
+          }
+        ]
+      }
+    ],
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": ["asa-wiki-gpt-app.azurewebsites.net"]
+  }
