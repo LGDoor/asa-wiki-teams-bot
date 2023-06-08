@@ -10,7 +10,7 @@ VECTOR_INDEX_FILE_LIST = os.environ.get("VECTOR_INDEX_FILE_LIST", 'file_not_foun
 TOP_K = 5
 
 prompt_helper = PromptHelper(max_input_size=4096, num_output=2048, max_chunk_overlap=20)
-llm_predictor = LLMPredictor(llm=ChatOpenAI(temperature=0.7, model_name="gpt-3.5-turbo", model_kwargs={'engine':'chat'}))
+llm_predictor = LLMPredictor(llm=ChatOpenAI(temperature=0.7, model_name="gpt-3.5-turbo", model_kwargs={'engine':'gpt-35-turbo'}))
 service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor, prompt_helper=prompt_helper, embed_model=OpenAIEmbedding(embed_batch_size=1))
 vector_index_list = []
 
