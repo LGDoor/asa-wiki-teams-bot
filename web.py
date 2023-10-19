@@ -82,9 +82,13 @@ async def messages(req: Request) -> Response:
         return json_response(data=response.body, status=response.status)
     return Response(status=HTTPStatus.OK)
 
+def health(req: Request) -> Response:
+    return Response(text="ok", status=HTTPStatus.OK)
+
 
 APP = web.Application()
 APP.router.add_post("/api/messages", messages)
+APP.router.add_get("/health", health)
 
 if __name__ == "__main__":
     try:

@@ -1,4 +1,3 @@
 llama-index==0.5.17
-botbuilder-integration-aiohttp @ git+https://github.com/LGDoor/botbuilder-python.git@main#subdirectory=libraries/botbuilder-integration-aiohttp
+botbuilder-integration-aiohttp==4.14.5
 langchain==0.0.144
-nltk==3.8.1
